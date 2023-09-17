@@ -63,12 +63,12 @@ ul li a,ul li{
     display: none;
     width: 25vw;
     height: 100%;
-    background-color: purple;
+    background-color: #800080;
     position: absolute;
     right: 0;
     top: 0;
 }
-.cancel{
+#cancel{
     cursor: pointer;
     font-size: 1.5rem;
     position: absolute;
@@ -90,4 +90,74 @@ ul li a,ul li{
     text-underline-offset: 8px;
 }
 
+/* profile css */
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    min-height: fit-content;
+    box-sizing: border-box;
+}
+#home{
+    display: flex;
+    justify-content:center;
+    gap: 5rem;
+    height: 80vh;
+}
+.profile img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin: auto 0;
+}
+.profile-data{
+    position: relative;
+    top: 70px;
+    text-align: center;
+}
+p{
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+h1{
+    font-size: 3rem;
+}
+/* socila link css */
+.social-links>i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.social-links{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+/* buttons links */
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.btn{
+    font-weight: 600;
+    padding: 1rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    width: 8rem;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+#cont-btn{
+    background-color: purple;
+}
+#cont-btn:hover{
+    color: white;
+}
+#down-btn:hover{
+    background-color: purple;
+}
 
