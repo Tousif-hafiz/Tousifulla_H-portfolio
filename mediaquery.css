@@ -22,6 +22,19 @@
     .cancel{
         font-size: 1.2rem;
     }
+    #home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .profile img{
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        margin: auto 0;
+    }
 }
 @media  screen and (min-width:425px) and (max-width:625px){
     #sidemenu{
@@ -29,5 +42,18 @@
     }
     .sidemenuitems li a{
         font-size: 1.2rem;
+    }
+    #home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .profile img{
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        margin: auto 0;
     }
 }
