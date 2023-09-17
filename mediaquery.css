@@ -1,0 +1,33 @@
+@media screen and (max-width:1200px) {
+    .navlink{
+        display: none;
+    }
+    .navbar .hamberger-icon{
+        display: block;
+    }
+}
+@media screen and (max-width:425px) {
+    #sidemenu{
+        width: 35vw;
+    }
+    .sidemenuitems li a{
+        font-size: 1rem;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+    .navbar .hamberger-icon{
+        font-size: 1.5rem;
+    }
+    .cancel{
+        font-size: 1.2rem;
+    }
+}
+@media  screen and (min-width:425px) and (max-width:625px){
+    #sidemenu{
+        width: 40vw;
+    }
+    .sidemenuitems li a{
+        font-size: 1.2rem;
+    }
+}
