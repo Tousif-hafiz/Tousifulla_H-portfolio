@@ -1,3 +1,6 @@
+body{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -67,6 +70,7 @@ ul li a,ul li{
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 1;
 }
 #cancel{
     cursor: pointer;
@@ -101,6 +105,7 @@ section{
 #home{
     display: flex;
     justify-content:center;
+    align-items: center;
     gap: 5rem;
     height: 80vh;
 }
@@ -111,13 +116,11 @@ section{
     margin: auto 0;
 }
 .profile-data{
-    position: relative;
-    top: 70px;
     text-align: center;
 }
 p{
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 h1{
@@ -150,6 +153,7 @@ h1{
     width: 8rem;
     transition: all 0.4s ease;
     cursor: pointer;
+    border:2px solid black;
 }
 #cont-btn{
     background-color: purple;
@@ -160,4 +164,73 @@ h1{
 #down-btn:hover{
     background-color: purple;
 }
+.icon{
+    transition: transform 0.3s ease;
+}
+.icon:hover{
+    transform: scale(1.2);
+}
+/* about css */
+.about-p{
+    font-weight: 400;
+}
+.about-p,.about-h1{
+    text-align: center;
+}
+.about-h1{
+    margin-bottom: 1rem;
+}
+.aboutme-content{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.photo img{
+    border-radius: 5rem;
+    width: 500px;
+    height: 500px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.photo:hover img{
+    transform: scale(1.1);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.tab-titles{
+    display: flex;
+    justify-content: space-between;
+}
+.tab-links{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.tab-links:hover{
+    transform: scale(1.1);
+}
+.tab-content{
+    padding: 1rem;
+}
+.tab-content ul>li{
+    font-size: 1rem;
+    list-style: disc;
+}
+.tab-content ul>li>span:first-of-type{
+    color: #800080;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.tab-content{
+    display: none;
+}
+#s-active{
+    color: purple;
+}
+#skills{
+    display: block;
+}
 
+/* projects section css */

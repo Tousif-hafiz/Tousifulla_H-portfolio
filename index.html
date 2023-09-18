@@ -21,11 +21,11 @@
             <i class="fa-solid fa-bars hamberger-icon" onclick="displaymenu()"></i>
             <div class="navlink">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Achivements</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achivements">Achivements</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -33,34 +33,75 @@
             <div class="menuitems">
                 <i class="fa-solid fa-xmark" id="cancel"></i>
                 <ul class="sidemenuitems">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Achivements</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Achivements">Achivements</a></li>
+                    <li><a href="#contacts">Contact</a></li>
                 </ul>
             </div>
         </div>
     </header>
+    <!-- home section -->
     <section id="home">
         <div class="profile">
-            <img src="src/profilephoto.gif" alt="">
+            <img src="src/profilephoto.gif" alt="profile photo">
         </div>
         <div class="profile-data">
             <p>Hi, there</p>
-            <h1>I'm Tousifulla H</h1>
+            <h1>I'm <span style="color: purple;">T</span>ousifulla H</h1>
             <p>Software Engineer</p>
             <div class="buttons">
                 <button class="btn" id="down-btn">Download CV</button>
                 <button class="btn" id="cont-btn" >Contact</button>
             </div>
             <div class="social-links">
-                <i class="fa-brands fa-github" onclick="location.href=''"></i>
-                <i class="fa-brands fa-linkedin" onclick="location.href=''"></i>
-                <i class="fa-brands fa-hackerrank" onclick="location.href=''"></i>
-                <i class="fa-brands fa-instagram" onclick="location.href=''"></i>
+                <i class="fa-brands fa-github icon" onclick="location.href='https://github.com/Tousif-hafiz'"></i>
+                <i class="fa-brands fa-linkedin icon" onclick="location.href='https://www.linkedin.com/in/tousifulla-hafiz-3331811b3/'"></i>
+                <i class="fa-brands fa-hackerrank icon" onclick="location.href='https://www.hackerrank.com/tousifullah58802'"></i>
+                <i class="fa-brands fa-instagram icon" onclick="location.href='https://www.instagram.com/bilbliophile_tousifullahafiz/'"></i>
             </div>
         </div>
+    </section>
+    <!-- about section -->
+    <section id="about">
+        <p class="about-p">Get to know more</p>
+        <h1 class="about-h1">About Me</h1>
+        <div class="container">
+            <div class="photo">
+                <img src="src/profilepic.png" alt="">
+            </div>
+            <div class="content">
+                <p class="aboutme-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam mollitia fugiat tenetur natus doloribus eligendi non totam facilis libero sint minus officia sed distinctio, dignissimos nulla eos quaerat nemo nostrum.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links" id="s-active" onclick="skills()">Skills</p>
+                    <p class="tab-links" id="ed-active" onclick="education()">Education</p>
+                    <p class="tab-links" id="ex-active" onclick="experience()">Experience</p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>Java</span><br><span>Core java</span><br><span>Object Oriented Programming System</span><br><span>DSA</span><br></li>
+                        <li><span>Web Technologies</span><br><span>Html</span><br><span>Css</span><br><span>JavaScript</span></li>
+                        <li><span>SQL</span></li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>BE</span><br><span>Computer Science and Engineering 2019-2023</span><br><span>84% 8.80CGPA</span><br><span>Jain Institute of Technology, Davanagere</span></li>
+                        <li><span>+2 Pre-University College</span><br><span>Science(PCMB) 2017-2019</span><br><span>84%</span><br><span>Anjum Pre-university College, Davanagere</span></li>
+                        <li><span>10<sup>th</sup> SSLC 2014-2017</span><br><span>86.72%</span><br><span>Anjum High School, Davanagere</span></li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="experience">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- projects section -->
+    <section id="projects">
+
     </section>
     <script src="functionality.js"></script>
 </body>

@@ -22,10 +22,11 @@
     .cancel{
         font-size: 1.2rem;
     }
+    /* home section */
     #home{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         height: 100%;
     }
@@ -35,6 +36,76 @@
         height: 250px;
         margin: auto 0;
     }
+    p{
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .social-links>i{
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .btn{
+        font-weight: 600;
+        padding: 0.5rem;
+        background-color: transparent;
+        border-radius: 2rem;
+        width: 7rem;
+        transition: all 0.4s ease;
+        cursor: pointer;
+        border:2px solid black;
+    }
+    /* about section */
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo img{
+        border-radius: 5rem;
+        width: 250px;
+        height: 250px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .about-p{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .about-h1{
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .aboutme-content{
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    .tab-titles{
+        display: flex;
+        gap: 1rem;
+    }
+    .tab-links{
+        font-size: 1rem;
+    }
+    .tab-content ul>li{
+        font-size: 0.8rem;
+        list-style: disc;
+    }
+    .tab-content ul>li>span:first-of-type{
+        color: #800080;
+        font-size: 1rem;
+        font-weight: 500;
+    }
 }
 @media  screen and (min-width:425px) and (max-width:625px){
     #sidemenu{
@@ -43,6 +114,7 @@
     .sidemenuitems li a{
         font-size: 1.2rem;
     }
+    /* home section */
     #home{
         display: flex;
         flex-direction: column;
@@ -55,5 +127,34 @@
         width: 300px;
         height: 300px;
         margin: auto 0;
+    }
+    /* about section */
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo img{
+        border-radius: 5rem;
+        width: 350px;
+        height: 350px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .tab-titles{
+        display: flex;
+        gap: 1rem;
+    }
+    .tab-links{
+        font-size: 1.5rem;
+    }
+    .about-p{
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    .about-h1{
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
     }
 }
