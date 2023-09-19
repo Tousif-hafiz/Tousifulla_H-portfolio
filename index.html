@@ -6,7 +6,9 @@
     <title>Welcom to Tousif's portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaquery.css">
+    <!-- font awesom link which will allow to use icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- below links belongs to font which we have used for this project -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=MuseoModerno:ital,wght@0,100;0,200;1,200&family=Poppins:wght@300;400;500;600;700;800&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;1,200&family=Poppins:wght@300;400;500;600;700;800&display=swap');
@@ -24,7 +26,6 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#achivements">Achivements</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -36,7 +37,6 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#Achivements">Achivements</a></li>
                     <li><a href="#contacts">Contact</a></li>
                 </ul>
             </div>
@@ -52,7 +52,7 @@
             <h1>I'm <span style="color: purple;">T</span>ousifulla H</h1>
             <p>Software Engineer</p>
             <div class="buttons">
-                <button class="btn" id="down-btn">Download CV</button>
+                <button class="btn" id="down-btn"><a href="src/RESUME TUH.pdf" download>Download CV</a></button>
                 <button class="btn" id="cont-btn" >Contact</button>
             </div>
             <div class="social-links">
@@ -101,6 +101,35 @@
     </section>
     <!-- projects section -->
     <section id="projects">
+        <p>Brows my recent</p>
+        <h1>Projects</h1>
+        <div class="pro-container">
+            <div class="project">
+                <img src="src/project1.jpg" alt="">
+                <div class="layer">
+                    <h2>Netflix clone website</h2>
+                    <p>This project is a static Netflix homepage clone created using only html and css. the purpose
+                        of this project was to replicate the desing and layout of the Netflix homepage, showcasing front-end web development skills.
+                    </p>
+                    <i class="fa-solid fa-up-right-from-square icon"></i>
+                </div>
+            </div>
+            <div class="project">
+                <img src="src/project2.jpg" alt="">
+                <div class="layer">
+                    <h2>Personal portfolio website</h2>
+                    <p>In the ever-evolving world of web development, having an onilne presence is crucial. This portfolio website not only showcases my technical abilities but
+                        also reflects my dedication to creating intuitive and visually appealing web experiences.
+                    </p>
+                    <i class="fa-solid fa-up-right-from-square icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section -->
+    <section id="contact">
+        <p class="cont-p">Get in touch</p>
+        <h1 class="cont-h1">Contact</h1>
 
     </section>
     <script src="functionality.js"></script>
