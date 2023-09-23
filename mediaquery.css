@@ -1,6 +1,37 @@
-@media screen and (max-width:1200px) {
+@media screen and (max-width:768px) {
+    .navlink>ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position:fixed;
+        top: 0;
+        right: 0;
+        width: 40vw;
+        height: 100vh;
+        padding-top: 50px;
+        background-color: #800080;
+        z-index: 1;
+    }
     .navlink{
         display: none;
+    }
+    .navlink ul li a{
+        font-size: 0.8em;
+    }
+    .navlink ul li a:hover{
+        color: black;
+        text-decoration: solid black underline 0.1rem;
+        text-underline-offset: 7px;
+    }
+    .navlink ul li a::after{
+        display: none;
+    }
+    .navlink>ul>#cancel{
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 1.5rem;
     }
     .navbar .hamberger-icon{
         display: block;
@@ -219,6 +250,10 @@
         margin-top: 3rem;
         height: 100%;
     }
+    .aboutme-content{
+        font-size: 1rem;
+        font-weight: 300;
+    }
     .container{
         display: flex;
         flex-direction: column;
@@ -317,6 +352,9 @@
     h1{
         font-size: 2.5rem;
     }
+    section{
+        margin: 0 5rem;
+    }
     /* home section */
     .profile img{
         border-radius: 50%;
@@ -368,5 +406,60 @@
     .about-h1{
         font-size: 2rem;
         margin-bottom: 0.5rem;
+    }
+    /* project section */
+
+    .pro-container{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 2.2rem;
+        margin-top: 3rem;
+    }
+    /* contact section */
+    #contact{
+        margin: 0 0;
+        margin-top: 8rem;
+        padding:0 2rem;
+        height: 100vh;
+        width: 100vw;
+    }
+
+}
+@media screen and (min-width:855px) and (max-width:1024px) {
+    /* project section */
+    .pro-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 1rem;
+        margin-top: 3rem;
+    }
+    .layer p{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .layer h2{
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    .project .icon{
+        font-size: 1.8rem;
+    }
+    section{
+        margin: 0 4rem;
+    }
+    /* contact */
+    .aboutme-content{
+        height: 20vh;
+        overflow: auto;
+    }
+    .photo img{
+        border-radius: 5rem;
+        width: 400px;
+        height: 400px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        border-radius: 50%;
     }
 }

@@ -23,6 +23,7 @@
             <i class="fa-solid fa-bars hamberger-icon" onclick="displaymenu()"></i>
             <div class="navlink">
                 <ul>
+                    <i class="fa-solid fa-xmark" id="cancel"></i>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -30,17 +31,7 @@
                 </ul>
             </div>
         </div>
-        <div id="sidemenu">
-            <div class="menuitems">
-                <i class="fa-solid fa-xmark" id="cancel"></i>
-                <ul class="sidemenuitems">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contacts">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+        
     </header>
     <!-- home section -->
     <section id="home">
@@ -53,7 +44,7 @@
             <p>Software Engineer</p>
             <div class="buttons">
                 <button class="btn" id="down-btn"><a href="src/RESUME TUH.pdf" download target="_blank">Download CV</a></button>
-                <button class="btn" id="cont-btn" >Contact</button>
+                <button class="btn" id="cont-btn" onclick="location.href='#contact'">Contact</button>
             </div>
             <div class="social-links">
                 <i class="fa-brands fa-github icon" onclick="location.href='https://github.com/Tousif-hafiz'"></i>
@@ -72,8 +63,7 @@
                 <img src="src/profilepic.png" alt="">
             </div>
             <div class="content">
-                <p class="aboutme-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam mollitia fugiat tenetur natus doloribus eligendi non totam facilis libero sint minus officia sed distinctio, dignissimos nulla eos quaerat nemo nostrum.</p>
-
+                <div class="aboutme-content">I'm a Computer Science and Engineering graduate from Jain Institute of Technology, well-versed in core Java, web technologies (HTML, CSS, JavaScript), and proficient in data structures and algorithms. Beyond technology, my hobbies include reading, creating captivating book photos, and writing insightful reviews. I also manage a dedicated bookstagram account, fostering a vibrant online book community. My education equips me with the skills to innovate in the tech industry, while my hobbies reflect my creative and communicative side, making me a well-rounded professional.</div>
                 <div class="tab-titles">
                     <p class="tab-links" id="s-active" onclick="skills()">Skills</p>
                     <p class="tab-links" id="ed-active" onclick="education()">Education</p>
@@ -111,7 +101,7 @@
                     <p>This project is a static Netflix homepage clone created using only html and css. the purpose
                         of this project was to replicate the desing and layout of the Netflix homepage, showcasing front-end web development skills.
                     </p>
-                    <i class="fa-solid fa-up-right-from-square icon"></i>
+                    <i class="fa-solid fa-up-right-from-square icon" onclick="location.href='https://github.com/Tousif-hafiz/personal-portfolio-responsive-website'"></i>
                 </div>
             </div>
             <div class="project">
@@ -121,7 +111,7 @@
                     <p>In the ever-evolving world of web development, having an onilne presence is crucial. This portfolio website not only showcases my technical abilities but
                         also reflects my dedication to creating intuitive and visually appealing web experiences.
                     </p>
-                    <i class="fa-solid fa-up-right-from-square icon"></i>
+                    <i class="fa-solid fa-up-right-from-square icon" onclick="location.href='https://github.com/Tousif-hafiz/static-clone-Netflix-Homepage'"></i>
                 </div>
             </div>
         </div>
@@ -143,10 +133,10 @@
                 </div>
             </div>
             <div id="contcol2">
-                <form action="" class="cont-info">
-                    <input type="text" class="" id="" placeholder="Your name" required>
-                    <input type="email" class="" id="" placeholder="Your email" required>
-                    <textarea name="" id="" cols="30" rows="5" placeholder="Your message"></textarea>
+                <form action="" class="cont-info" name="submit-to-google-sheet">
+                    <input type="text" name="Name" id="" placeholder="Your name" required>
+                    <input type="email" name="Email" id="" placeholder="Your email" required>
+                    <textarea name="Message" id="" cols="30" rows="5" placeholder="Your message"></textarea>
                     <button class="btn" id="down-btn">Submit</button>
                 </form>
             </div>
